@@ -1,18 +1,13 @@
-# facebook-clone
+# Kingdom of God Website
 
-Building Facebook UI Clone using React & Tailwind CSS🔥
+Built using React & Tailwind CSS🔥
 
-<img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/338b0e196151667.665c504e7b20e.png" alt="screenshot"/>
+Welcome to the Kingdom of God Website — a beautifully crafted web application built using React and Tailwind CSS. This project is designed with modern web development practices, ensuring a responsive, scalable, and high-performance user experience. ✨
 
-# Installation
-
-Ensure sure you have [Node.js](https://nodejs.org) installed on your machine. Then run the following commands.
-
-```javascript
-cd YOUR-PROJECT-FOLDER
-yarn  // install all packages
-yarn dev  // run the app on localhost
-```
+🚀 Tech Stack
+React: A powerful JavaScript library for building user interfaces.
+Tailwind CSS: A utility-first CSS framework for rapid UI development.
+Vite: A lightning-fast frontend build tool and development server.
 
 # Contribution
 
@@ -20,4 +15,4 @@ Looking for contribution? Your contribution will be much appreciated. <3
 
 Just send a PR with new changes.
 
-Show some ❤️ by ⭐ the project.
+Show ❤️ to all; and please ⭐ the project.
