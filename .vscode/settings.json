@@ -10,5 +10,6 @@
   "css.lint.unknownAtRules": "ignore",
   "editor.codeActionsOnSave": {
     "source.organizeImports": "always"
-  }
+  },
+  "CodeGPT.apiKey": "CodeGPT Plus Beta"
 }
