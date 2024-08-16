@@ -1,0 +1,14 @@
+{
+  "cSpell.words": [
+    "clsx",
+    "formik",
+    "newsfeed",
+    "Shihab",
+    "signup",
+    "tailwindcss"
+  ],
+  "css.lint.unknownAtRules": "ignore",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always"
+  }
+}
