@@ -19,5 +19,5 @@ RUN npm run build
 # Expose the port that the app runs on
 EXPOSE 3000
 
-# Start the application
-CMD ["npm", "run", "build"]
+# Start the application using Vite's preview mode
+CMD ["npm", "run", "preview"]
