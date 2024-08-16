@@ -9,5 +9,6 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: parseInt(process.env.PORT) || 3000,  // Use PORT environment variable, fallback to 3000
+    host: true, // This allows Vite to listen on all available network interfaces
   },
 });

@@ -20,4 +20,4 @@ RUN npm run build
 EXPOSE $PORT
 
 # Start the application using Vite's preview mode with the specified port
-CMD ["sh", "-c", "npm run preview -- --port $PORT"]
+CMD ["sh", "-c", "npm run preview -- --port $PORT --host"]
