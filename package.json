@@ -6,9 +6,11 @@
   "dependencies": {
     "clsx": "^2.1.0",
     "dotenv": "^16.4.5",
+    "express": "^4.19.2",
     "formik": "^2.2.9",
     "kingdom-of-god-website": "file:",
     "moment": "^2.29.2",
+    "node-fetch": "^3.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^3.11.0",
@@ -22,7 +24,10 @@
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|jsx|tsx|json)\""
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|jsx|tsx|json)\"",
+    "start-server": "node proxy/server.js",
+    "start-test": "concurrently \"npm run start-server\" \"npm run preview -- --port 7000 --host\"",
+    "start": "concurrently \"npm run start-server\" \"npm run preview -- --port $PORT --host\""
   },
   "keywords": [
     "react",
@@ -36,6 +41,7 @@
     "@typescript-eslint/parser": "^5.5.0",
     "@vitejs/plugin-react": "^4.0.0",
     "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.2",
     "eslint": "^8.38.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.25.3",
