@@ -6,14 +6,16 @@ import dotenv from 'dotenv';
 const app = express();
 const PORT = process.env.PROXY_PORT || 5000;
 
+const credentials = {
+  [process.env.API_KEY_NAME]: `${process.env.API_KEY}`
+}
+
 // Example API route
 app.get('/api/data', async (req, res) => {
   try {
     const apiResponse = await fetch('https://external-api.com/data', {
       method: 'GET',
-      headers: {
-        'Authorization': `Bearer ${process.env.API_KEY}`
-      }
+      headers: credentials
     });
 
     if (!apiResponse.ok) {
