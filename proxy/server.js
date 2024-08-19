@@ -2,33 +2,12 @@
 import express from 'express';
 import fetch from 'node-fetch';
 import dotenv from 'dotenv';
+import account from './routes/account.js'; // Import the route
 
 const app = express();
 const PORT = process.env.PROXY_PORT || 5000;
 
-const credentials = {
-  [process.env.API_KEY_NAME]: `${process.env.API_KEY}`
-}
-
-// Example API route
-app.get('/api/data', async (req, res) => {
-  try {
-    const apiResponse = await fetch('https://external-api.com/data', {
-      method: 'GET',
-      headers: credentials
-    });
-
-    if (!apiResponse.ok) {
-      throw new Error('Failed to fetch data from external API');
-    }
-
-    const data = await apiResponse.json();
-    res.json(data);
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: 'Internal Server Error' });
-  }
-});
+app.use('/api/account', account); // Use the route
 
 app.listen(PORT, () => {
   console.log(`Proxy Server is running on http://localhost:${PORT}`);
